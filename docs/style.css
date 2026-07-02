@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --bg: #06101d;
+    --panel: #102033;
+    --accent: #4fd1c5;
+    --text: #eff6ff;
+    --muted: #bbcae7;
+}
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    font-size: 18px;
+}
+h1 {
+    text-transform: capitalize;
+}
+.header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+    position: sticky;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    top: 0%;
+    left: 0%;
+}
+.nav_group a{
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px
+}
+.btn_btn-auth{
+  background: gold;
+}
+.find_hub {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+.find_logo {
+    color: gold;
+}
+.overlay_left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.hero-slide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+}
+.search_bar {
+    padding: 14px;
+    align-items: center;
+    width: 100%;
+}
+.search_bar input, button {
+    padding: inherit;
+    font-size: 16px;
+}
+.search{
+  background: gold;
+}
+.search:hover{
+  background: #555555;
+}
+.overlay_right {
+    background: url("./profile.jpg") no-repeat;
+    background-attachment: cover;
+    background-position: fixed;
+    height: auto;
+    flex: 1;
+}
+
+@media screen and (max-width: 968px) {
+    .overlay_right {
+        display: none;
+    }
+    .overlay_left {
+        width: 100%;
+    }
+}

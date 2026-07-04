@@ -5,18 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>fixora</title>
         <link rel="stylesheet" href="style.css" />
+      <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
     </head>
     <body>
         <header class="header">
             <h1 class="logo">fixora</h1>
-            <nav class="nav_group">
+            <nav class="nav_group" id="nav_bar">
                 <a href="#">home</a>
-                <a href="#">services</a>
+                <a href="./ services/ services.html">services</a>
                 <a href="#">how it works</a>
-                <a href="#">become a provider</a>
+                <a href="./Profile/Profile.html">become a provider</a>
                 <a href="./Auth/login.html" class="btn_btn-auth">log in</a>
                 <a href="./Auth/signin.html" class="btn_btn-auth">sign in</a>
             </nav>
+          <button class="menu-toggle" id="menu_toggle" aria-label="Open menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
         </header>
         <main class="find_hub">
             <div class="overlay_left">
@@ -33,7 +41,7 @@
                         <option value="Baringo"></option>
                         <option value="Bomet"></option>
                         <option value="Bungoma"></option>
-                        <option valcoue="Busia"></option>
+                        <option value="Busia"></option>
                         <option value="Elgeyo-Marakwet"></option>
                         <option value="Embu"></option>
                         <option value="Garissa"></option>
@@ -87,19 +95,19 @@
                             <p>plumber</p>
                         </article>
                         <article class="mini_card">
-                            <p>plumber</p>
+                            <p>carpentry</p>
                         </article>
                         <article class="mini_card">
-                            <p>plumber</p>
+                            <p>electrician</p>
                         </article>
                         <article class="mini_card">
-                            <p>plumber</p>
+                            <p>driver</p>
                         </article>
                         <article class="mini_card">
-                            <p>plumber</p>
+                            <p>painter</p>
                         </article>
                         <article class="mini_card">
-                            <p>plumber</p>
+                            <p>housekeeper</p>
                         </article>
                     </div>
                 </div>
@@ -111,35 +119,35 @@
             </div>
         </main>
         <section class="service_bay">
-            <h1>popular services</h1>
+            <h1 style="text-align: center;">popular services</h1>
             <div class="providersbay">
-                <article class="mini_card">
+                <article class="mini_card2">
                     <h3>plumbing</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
-                <article class="mini_card">
-                    <h3>plumbing</h3>
+                <article class="mini_card2">
+                    <h3>electrician</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
-                <article class="mini_card">
-                    <h3>plumbing</h3>
+                <article class="mini_card2">
+                    <h3>housekeeper</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
-                <article class="mini_card">
-                    <h3>plumbing</h3>
+                <article class="mini_card2">
+                    <h3>painter</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
-                <article class="mini_card">
-                    <h3>plumbing</h3>
+                <article class="mini_card2">
+                    <h3>carpentry</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
-                <article class="mini_card">
-                    <h3>plumbing</h3>
+                <article class="mini_card2">
+                    <h3>driver</h3>
                     <span id="providers">3k+</span>
                     <p>providers</p>
                 </article>
@@ -147,7 +155,10 @@
             <h3>more....</h3>
         </section>
         <footer class="footer">
-            <div class=""></div>
+            <div class="footer_link">&copy2026 all rights reserved</div>
+          <p>developed by mofo agencies</p>
         </footer>
+      <script src="app.js">
+      </script>
     </body>
 </html>

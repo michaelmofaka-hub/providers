@@ -38,6 +38,9 @@ h1 {
   color: #000;
   border-radius: 10px
 }
+.menu-toggle{
+  display: none;
+}
 .btn_btn-auth{
   background: gold;
 }
@@ -68,6 +71,9 @@ h1 {
 .search_bar input, button {
     padding: inherit;
     font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
 }
 .search{
   background: gold;
@@ -82,6 +88,44 @@ h1 {
     height: auto;
     flex: 1;
 }
+.mini_card{
+  border-radius: 10px;
+  background: #e0e0e0;
+  padding: 8px;
+  text-transform: capitalize;
+}
+.providersbay{
+  display: flex;
+  width: 100%;
+  gap: 20px;;
+}
+.mini_card2{
+  border-radius: 10px;
+  background: #e0e0e0;
+  padding: 8px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid grey;
+    margin-top: 30px;
+    position: sticky;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    top: 0%;
+    left: 0%;
+}
+.footer_link{
+  align-items: center;
+  color: var(--muted);
+  text-transform: capitalize;
+}
 
 @media screen and (max-width: 968px) {
     .overlay_right {
@@ -90,4 +134,24 @@ h1 {
     .overlay_left {
         width: 100%;
     }
+  .nav_group{
+    /* display: none; */
+    top: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #9d9d9d55;
+    gap: 20px;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  } 
+  .menu-toggle{
+    display: block;
+  }
+  .providersbay{
+    flex-direction: column;
+    gap: 20px;
+  }
 }

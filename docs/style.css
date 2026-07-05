@@ -33,16 +33,24 @@ h1 {
     top: 0%;
     left: 0%;
 }
-.nav_group a{
-  text-decoration: none;
-  color: #000;
-  border-radius: 10px
+.nav_group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
 }
-.menu-toggle{
-  display: none;
+.nav_group a {
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
 }
-.btn_btn-auth{
-  background: gold;
+.menu-toggle {
+    display: none;
+}
+.btn_btn-auth {
+    background: gold;
+    padding: 8px;
 }
 .find_hub {
     display: flex;
@@ -68,18 +76,19 @@ h1 {
     align-items: center;
     width: 100%;
 }
-.search_bar input, button {
+.search_bar input,
+button {
     padding: inherit;
     font-size: 16px;
     border-radius: 10px;
     outline: none;
     border: none;
 }
-.search{
-  background: gold;
+.search {
+    background: gold;
 }
-.search:hover{
-  background: #555555;
+.search:hover {
+    background: #555555;
 }
 .overlay_right {
     background: url("./profile.jpg") no-repeat;
@@ -88,25 +97,25 @@ h1 {
     height: auto;
     flex: 1;
 }
-.mini_card{
-  border-radius: 10px;
-  background: #e0e0e0;
-  padding: 8px;
-  text-transform: capitalize;
+.mini_card {
+    border-radius: 10px;
+    background: #e0e0e0;
+    padding: 8px;
+    text-transform: capitalize;
 }
-.providersbay{
-  display: flex;
-  width: 100%;
-  gap: 20px;;
+.providersbay {
+    display: flex;
+    width: 100%;
+    gap: 20px;
 }
-.mini_card2{
-  border-radius: 10px;
-  background: #e0e0e0;
-  padding: 8px;
-  width: 100%;
-  text-transform: capitalize;
+.mini_card2 {
+    border-radius: 10px;
+    background: #e0e0e0;
+    padding: 8px;
+    width: 100%;
+    text-transform: capitalize;
 }
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -121,10 +130,10 @@ h1 {
     top: 0%;
     left: 0%;
 }
-.footer_link{
-  align-items: center;
-  color: var(--muted);
-  text-transform: capitalize;
+.footer_link {
+    align-items: center;
+    color: var(--muted);
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 968px) {
@@ -134,24 +143,24 @@ h1 {
     .overlay_left {
         width: 100%;
     }
-  .nav_group{
-    /* display: none; */
-    top: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: none;
-    flex-direction: column;
-    background-color: #9d9d9d55;
-    gap: 20px;
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
-  } 
-  .menu-toggle{
-    display: block;
-  }
-  .providersbay{
-    flex-direction: column;
-    gap: 20px;
-  }
+    .nav_group {
+        display: none;
+    }
+    .nav_group.active {
+        /* display: none; */
+        top: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .providersbay {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

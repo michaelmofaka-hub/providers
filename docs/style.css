@@ -143,15 +143,16 @@ button {
     .overlay_left {
         width: 100%;
     }
+    .nav_group.active {
+        display: flex;
+    }
     .nav_group {
         display: none;
-    }
-    .nav_group.active {
-        /* display: none; */
         top: 100%;
         width: 100%;
         position: absolute;
         bottom: 0;
+        background: #999999;
         align-items: center;
         flex-direction: column;
         gap: 20px;

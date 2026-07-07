@@ -37,6 +37,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    background-color: red;
+    color: red;
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
 }
@@ -44,6 +46,8 @@ h1 {
     text-decoration: none;
     color: #000;
     border-radius: 10px;
+  z-index: 1000;
+  color: red;
 }
 .menu-toggle {
     display: none;
@@ -145,14 +149,17 @@ button {
     }
     .nav_group.active {
         display: flex;
+        background: #9999;
     }
     .nav_group {
         display: none;
         top: 100%;
         width: 100%;
+      height: auto;
+      z-index: 1;
         position: absolute;
         bottom: 0;
-        background: #999999;
+        background: #ffffff;
         align-items: center;
         flex-direction: column;
         gap: 20px;

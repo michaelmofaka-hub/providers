@@ -1,24 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fixora | profile page</title>
-  <link rel="stylesheet" href="sty;e.css">
-</head>
-<body>
-  <header class="topnav">
-    <h1>fixora</h1>
-    <div class="serch_bar">
-      <input type="search" id="search" placeholder="what servicea do tou need?..">
-        <button id="send">search</button>
-    </div>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fixora | profile page</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="topnav">
+            <h1>fixora</h1>
+            <div class="serch_bar">
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="what services do tou need?.."
+                />
+                <button id="send">search</button>
+            </div>
+            <div class="notification_bar">
+                <span id="notification_available">3</span>
+                <img src="profile.jpg" alt="" />
+            </div>
+        </header>
 
-  <div class="profile_picture">
-    <div class="fg_picture">
-    </div>
-  </div>
-  
-</body>
-</html>.r
+        <div class="profile_picture">
+            <img src="profile.jpg" id="hero_img" alt="" />
+            <div class="fg_picture">
+                <img src="profile.jpg" alt="" />
+            </div>
+        </div>
+        <h1 id="title">james plumbing services</h1>
+        <section class="overlay">
+            <div class="left">
+                <div class="a_section">
+                    <i class=""></i>
+                    <p>rates</p>
+                    <span id="yearsexperience">5years of experience</span>
+                    <span id="content_jobs">250</span>
+                    <p>completed jobs</p>
+                </div>
+                <div class="b_section">
+                    <p id="location">nairobi</p>
+                    <p>kenya</p>
+                    <p>responds in</p>
+                    <span id="minutes">30 minutes</span>
+                </div>
+            </div>
+            <div class="right">
+                <button class="ctn_btn">message</button>
+                <a href="../index.html" class="ctn_btn2" id="request"
+                    >request a service</a
+                >
+            </div>
+        </section>
+        <nav class="middle_nav">
+            <a href="#overview">overview</a>
+            <a href="#services">services</a>
+            <a href="#reviews">reviews</a>
+        </nav>
+        <main class="hero">
+            <div class="overview" id="overview">
+                <div class="about"></div>
+                <div class="services"></div>
+                <div class="location"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_link">&copy2026 all rights reserved</div>
+            <p>developed by mofo agencies</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

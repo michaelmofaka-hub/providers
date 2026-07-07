@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
     const email = document.getElementById("email").value;
     
     if (username && password && email) {
-        window.location.href = "../Users/dashboard.html";
+        window.location.href = "../User/dashboard.html";
     } else {
         alert("Please fill all fields");
     }

@@ -1,3 +1,3 @@
 function request() {
-    window.location.href = "services.html";
+    window.location.href = "../services/services.html";
 }

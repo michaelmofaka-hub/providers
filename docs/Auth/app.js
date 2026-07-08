@@ -1,6 +1,6 @@
 const form = document.getElementById("container");
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;

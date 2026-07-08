@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>fixora | dashboard</title>
         <link rel="stylesheet" href="dashboard.css" />
         <link
             rel="stylesheet"
@@ -12,6 +12,9 @@
     </head>
     <body>
         <main class="hero">
+            <button id="menu_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <aside class="sidebar">
                 <h1 style="text-align: center; text-transform: capitalize">
                     fixora
@@ -22,7 +25,7 @@
                     <a href="#"> messages</a>
                     <a href="#"> my jobs</a>
                     <a href="#">reviews</a>
-                    <a href="#">wallet</a>
+                    <a href="../wallet/wallet.html">wallet</a>
                     <a href="#">notifications</a>
                     <a href="#">settings</a>
                 </nav>
@@ -60,72 +63,112 @@
                                 <button id="submit">search</button>
                             </div>
                         </div>
-                    
+
                         <div class="container_two">
-                          <div class="category">
-                            <h1>category</h1>
-                            <div class="service_cards">
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>plumbing</p>
-                              </article>
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>painter</p>
-                              </article>
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>driver</p>
-                              </article>
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>electrician</p>
-                              </article>
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>private tutor</p>
-                              </article>
-                              <article class="mini_card">
-                                <i class="fa-solid fa-tap"></i>
-                                <p>plumbing</p>
-                              </article>
+                            <div class="category">
+                                <h1>category</h1>
+                                <div class="service_cards">
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>plumbing</p>
+                                    </article>
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>painter</p>
+                                    </article>
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>driver</p>
+                                    </article>
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>electrician</p>
+                                    </article>
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>private tutor</p>
+                                    </article>
+                                    <article class="mini_card">
+                                        <i class="fa-solid fa-tap"></i>
+                                        <p>plumbing</p>
+                                    </article>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      <div class="container_three">
-                        <h1>popular searches</h1>
-                        <div class="mini_cards">
-                            <article class="card">
-                              <img src="profile.jpg" alt="">
-                              <div class="flow">
-                                <h4 id="user">james</h4>
-                                <p>plumber</p>
-                                <p id="location">0798417759</p>
-                              </div>
-                              <button class="btn" onclick="show_profile()"></button>
-                            </article>
+                        <div class="container_three">
+                            <h1>popular searches</h1>
+                            <div class="mini_cards">
+                                <article class="card">
+                                    <img src="profile.jpg" alt="" />
+                                    <div class="flow">
+                                        <h4 id="user">james</h4>
+                                        <p>plumber</p>
+                                        <p id="location">nairobi</p>
+                                    </div>
+                                    <button
+                                        class="btn"
+                                        onclick="show_profile()"
+                                    >
+                                        show profile
+                                    </button>
+                                </article>
+                                <article class="card">
+                                    <img src="profile.jpg" alt="" />
+                                    <div class="flow">
+                                        <h4 id="user">james</h4>
+                                        <p>plumber</p>
+                                        <p id="location">nairobi</p>
+                                    </div>
+                                    <button
+                                        class="btn"
+                                        onclick="show_profile()"
+                                    >
+                                        show profile
+                                    </button>
+                                </article>
+                                <article class="card">
+                                    <img src="profile.jpg" alt="" />
+                                    <div class="flow">
+                                        <h4 id="user">james</h4>
+                                        <p>plumber</p>
+                                        <p id="location">nairobi</p>
+                                    </div>
+                                    <button
+                                        class="btn"
+                                        onclick="show_profile()"
+                                    >
+                                        show profile
+                                    </button>
+                                </article>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  <div class="overlay_left">
-                    <div class="wallet">
-                      <p>wallet balance</p>
-                      <div class="a"><h1>ksh</h1><h1 id='amount'>1200</h1></div>
-                      <button id="add" class="Add">add money</button>
+                    <div class="overlay_left">
+                        <div class="wallet">
+                            <p>wallet balance</p>
+                            <div class="a">
+                                <h1>ksh</h1>
+                                <h1 id="amount">1200</h1>
+                            </div>
+                            <button id="add" class="Add">add money</button>
+                        </div>
+                        <div class="quick_actions">
+                            <h4>quick actions</h4>
+                            <ul class="dropdownlist">
+                                <li><a href="#">book a service</a></li>
+                                <li><a href="#">invite and earn</a></li>
+                                <li>
+                                    <a href="../Profile.html"
+                                        >become a service provider</a
+                                    >
+                                </li>
+                                <li><a href="#">help and support</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="quick_actions">
-                      <p>quick_actions</p>
-                      <ul class="dropdownlist">
-                        <li><a href="#">book a service</a></li>
-                        <li><a href="#">invite and earn</a></li>
-                        <li><a href="#">become a service provider</a></li>
-                        <li><a href="#">help and support</a></li>
-                      </ul>
-                    </div>
-                  </div>
                 </section>
             </section>
         </main>
-      <script src="d.js"></script>
+        <script src="d.js"></script>
     </body>
 </html>

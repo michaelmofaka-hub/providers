@@ -2,214 +2,237 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif, poppins, helvica, system-ui;
+    font-family: sans-serif, helvatica, system-ui;
 }
 body {
-    max-width: 100%;
     min-height: 100vh;
-    font-size: 18px;
+    max-width: 100%;
 }
 .hero {
-    display: flex;
     height: 100vh;
     width: 100%;
+    display: flex;
 }
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 250px;
     height: 100vh;
-    width: 300px;
-    background: #9999;
-    padding: 20px;
 }
 .nav_list {
     display: grid;
-    gap: 30px;
     align-items: center;
-    margin-top: 50px;
+    gap: 1.3rem;
 }
 .nav_list a {
     text-decoration: none;
     text-transform: capitalize;
-    color: #000;
-    background: #9989;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    color: #000;
+    background: #ececec;
+}
+#menu_toggle {
+    display: none;
+    height: 40px;
+    border: none;
+    width: 40px;
 }
 .hero_slide {
     flex: 1;
-    min-width: 0;
     height: 100vh;
+    padding: 8px;
+    margin-top: 20px;
 }
 .topnav {
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    width: 100%;
     align-items: center;
-    padding: 20px;
-}
-.topnav .logo {
-    display: none;
+    height: 90px;
+    padding: 12px;
 }
 .notifications {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.info {
-    display: flex;
-}
-#notify {
-    position: relative;
 }
 .notifications img {
-    height: 30px;
     width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 .main {
+    width: 100%;
     display: flex;
-    height: 100vh;
 }
 .overlay_right {
     width: 70%;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    gap: 1.2rem;
 }
 .container_one {
-    background: #ececec;
-    border-radius: 10px;
-    height: 250px;
-    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    background: #ececec;
+    height: 205px;
+    border-radius: 10px;
 }
 .div_one {
+    padding: 20px;
     width: 60%;
 }
 .div_two {
-    flex: 1;
     background: url("profile.jpg") no-repeat;
-    background-position: fixed;
     background-attachment: cover;
+    background-position: fixed;
     height: auto;
     width: 100%;
+    background-size: 100% 100%;
+    flex: 1;
 }
 .search_bar {
     position: absolute;
-    display: flex;
-    align-items: center;
-    width: inherit;
-    padding: 10px;
     top: 235px;
-}
-.search_bar input {
     width: 70%;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
+    display: flex;
 }
-.search_bar button {
-    border: none;
+.container_two {
+    width: 100%;
+    background: #ececec;
     border-radius: 10px;
-    background: gold;
-    text-transform: capitalize;
-    align-items: center;
-    padding: 10px;
-    width: auto;
+    padding: 14px;
 }
-
-.overlay_left {
-    flex: 1;
+.category {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 7px;
+    gap: 0.6rem;
 }
-.wallet {
-    padding: 14px;
-    background: #ececec;
-    width: 100%;
-    height: 200px;
-    display: grid;
+.category h1 {
+    text-transform: capitalize;
 }
-.a {
+.service_cards {
     display: flex;
-}
-.Add {
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+}
+.mini_card {
+    padding: 10px;
+    background: #efefef;
+    border-radius: 11px;
+    align-items: center;
+    width: auto;
+}
+.container_three {
+    width: 100%;
+}
+.mini_cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2rem auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    width: auto;
     padding: 10px;
     border-radius: 10px;
+    height: auto;
+    background: #ececec;
+}
+.btn {
+    width: 100%;
     background: gold;
     border: none;
+    border-radius: 10px;
     text-transform: capitalize;
+    padding: 10px;
+}
+.overlay_left {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.wallet {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    background: #ececec;
+}
+.Add {
+    background: gold;
+    width: 100%;
+    padding: 19px;
     align-items: center;
+    border: none;
+    border-radius: 10px;
 }
 .quick_actions {
     width: 100%;
-    padding: 14px;
-    background: #ececec;
+    padding: 20px;
     border-radius: 10px;
-    border: none;
-    text-transform: capitalize;
-    align-items: center;
+    height: auto;
+    background: #ececec;
 }
 .dropdownlist {
     list-style: none;
     display: grid;
+    gap: 1.2rem;
 }
 .dropdownlist li a {
+    color: #000;
     text-decoration: none;
     text-transform: capitalize;
-  color: #000;
-}
-.container_two{
-    border-radius: 10px;
-    height: 250px;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.category{
-  display: grid;
-  gap: 30px;
-}
-.service_cards{
-  display: flex;
-  gap: .2rem;
-}
-.mini_card{
-     background: #ececec;
-    border-radius: 10px;
-    height: 250px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
 }
 @media screen and (max-width: 968px) {
-    .sidebar,
-    .name {
-        display: none;
-    }
-    .hero {
-        height: 100vh;
-        width: 100%;
-    }
-    .topnav .logo {
-        display: block;
-    }
     .main {
         flex-direction: column;
         height: 100vh;
-        width: 100%;
+    }
+    .sidebar {
+        display: none;
+        position: absolute;
+        height: 90vh;
+        top: 10%;
+        left: 0;
+        background: #ececec;
+    }
+    #menu_toggle {
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        padding: 8px;
+        height: fill-box;
+        left: 50px;
+        justify-self: unset;
+    }
+    .sidebar.active {
+        display: flex;
     }
     .container_one {
+        width: 100%;
+    }
+    .container_two {
+        width: 100%;
+    }
+    .topnav {
         width: 100%;
     }
     .overlay_right {
         width: 100%;
     }
-    .search_bar {
-        width: auto;
+    .overlay_left {
+        width: 100%;
     }
-    .search_bar input {
-        width: 70%;
+    .name {
+        display: none;
+    }
+    .mini_card {
+        width: 100%;
     }
 }

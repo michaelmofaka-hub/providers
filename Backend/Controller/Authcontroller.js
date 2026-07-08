@@ -1,6 +1,6 @@
-import user from "../Model/User.js";
+import User from "../Model/User.js";
 
-const signup = async (req, res) => {
+export const signin = async (req, res) => {
     try {
         const { firstName, lastName, username, email, password } = req.body;
 
@@ -33,7 +33,7 @@ const signup = async (req, res) => {
             lastName,
             username,
             email,
-            password: hashedPassword
+            password: password
         });
 
         res.status(201).json({
@@ -55,8 +55,4 @@ const signup = async (req, res) => {
             message: "Server error"
         });
     }
-};
-
-module.exports = {
-    signup
 };

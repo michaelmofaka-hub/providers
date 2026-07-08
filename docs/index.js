@@ -1,14 +1,6 @@
-const form = document.getElementById("container");
+const menu = document.getElementById("menu_toggle");
+const nav_bar = document.getElementById("nav_bar");
 
-form.addEventListener("submit", e => {
-    e.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const email = document.getElementById("email").value;
-
-    if (username && password && email) {
-        window.location.href = "../Users/dashboard.html"; // <-- this one
-    } else {
-        alert("Please fill all fields");
-    }
+menu.addEventListener("click", () => {
+    nav_ bar.classList.toggle("active");
 });

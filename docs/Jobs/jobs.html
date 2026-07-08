@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fixora | my jobs</title>
+        <link rel="stylesheet" href="jobs.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <main class="hero">
+            <button id="menu_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <aside class="sidebar">
+                <h1 style="text-align: center; text-transform: capitalize">
+                    fixora
+                </h1>
+                <nav class="nav_list">
+                    <a href="../User/dashboard.html">dashboard</a>
+                    <a href="../services/services.html">browse services</a>
+                    <a href="#">messages</a>
+                    <a href="./jobs.html">my jobs</a>
+                    <a href="#">reviews</a>
+                    <a href="../wallet/wallet.html">wallet</a>
+                    <a href="#">notifications</a>
+                    <a href="#">settings</a>
+                </nav>
+            </aside>
+            <section class="hero_slide">
+                <header class="topnav">
+                    <h1 class="logo">fixora</h1>
+                    <div class="name">
+                        <h1>my jobs</h1>
+                    </div>
+                </header>
+
+                <section class="main">
+                    <div class="jobs_container">
+                        <div class="jobs_section">
+                            <h2>Active Jobs</h2>
+                            <div class="jobs_list">
+                                <article class="job_card">
+                                    <h3>Plumbing Installation</h3>
+                                    <p><strong>Client:</strong> John Doe</p>
+                                    <p><strong>Status:</strong> <span class="status active">In Progress</span></p>
+                                    <p><strong>Payment:</strong> Ksh 5,000</p>
+                                    <button>View Details</button>
+                                </article>
+                                <article class="job_card">
+                                    <h3>Electrical Repair</h3>
+                                    <p><strong>Client:</strong> Jane Smith</p>
+                                    <p><strong>Status:</strong> <span class="status pending">Pending</span></p>
+                                    <p><strong>Payment:</strong> Ksh 3,500</p>
+                                    <button>View Details</button>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="jobs_section">
+                            <h2>Completed Jobs</h2>
+                            <div class="jobs_list">
+                                <article class="job_card">
+                                    <h3>Kitchen Renovation</h3>
+                                    <p><strong>Client:</strong> Mike Johnson</p>
+                                    <p><strong>Status:</strong> <span class="status completed">Completed</span></p>
+                                    <p><strong>Payment:</strong> Ksh 15,000</p>
+                                    <button>View Details</button>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script src="jobs.js"></script>
+    </body>
+</html>

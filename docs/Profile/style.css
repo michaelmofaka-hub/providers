@@ -7,7 +7,7 @@
 body {
     max-width: 100%;
     min-height: 100vh;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
 }
 .topnav {
     display: flex;
@@ -15,6 +15,8 @@ body {
     width: 100%;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .profile_picture {
     width: 100%;
@@ -22,26 +24,31 @@ body {
 }
 .profile_picture img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
     background-attachment: cover;
-    background-position: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
 .fg_picture {
     border-radius: 50%;
     border: 1px solid grey;
+    position: relative;
 }
 .fg_picture img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    top: 350px;
+    top: -30px;
+    left: 20px;
 }
 .notification_bar img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 #title {
     margin-left: 58px;
@@ -52,43 +59,56 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 170px;
+    height: auto;
     align-items: center;
     padding: 18px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .overlay .left {
     display: grid;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
 }
 .a_section,
 .b_section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .b_section button {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 .float_right {
-    display: inline-flex;
+    display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .ctn_btn {
     border: 1px solid gold;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
     width: auto;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .ctn_btn:hover {
     background: gold;
 }
 .ctn_btn2 {
     background: gold;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
     border: none;
     width: auto;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .ctn_btn2:hover {
     background: transparent;
@@ -98,10 +118,12 @@ body {
     margin-top: 30px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .middle_nav a {
     text-decoration: none;
     color: #000;
+    white-space: nowrap;
 }
 .middle_nav a:hover {
     border-bottom: 1px solid gold;
@@ -118,23 +140,26 @@ body {
     position: sticky;
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
-    top: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
+    gap: 15px;
 }
 
+/* Tablet breakpoint */
 @media screen and (max-width: 968px) {
-    .profile_picture img,
-    .fg_picture {
-        width: 100%;
+    .profile_picture img {
+        max-height: 250px;
     }
     .fg_picture img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        position: absolute;
+        width: 50px;
+        height: 50px;
     }
     .overlay {
         flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay .left {
+        width: 100%;
     }
     .float_right,
     .ctn_btn,
@@ -143,5 +168,52 @@ body {
     }
     .left {
         width: 100%;
+    }
+    .middle_nav {
+        width: 100%;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 640px) {
+    body {
+        font-size: clamp(13px, 2.5vw, 16px);
+    }
+    .topnav {
+        padding: 15px;
+    }
+    .profile_picture img {
+        max-height: 200px;
+    }
+    .fg_picture img {
+        width: 45px;
+        height: 45px;
+        left: 15px;
+    }
+    #title {
+        margin-left: 0;
+    }
+    .overlay {
+        padding: 15px;
+        gap: 15px;
+    }
+    .a_section,
+    .b_section {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .b_section button {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .ctn_btn,
+    .ctn_btn2 {
+        padding: 8px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .middle_nav {
+        gap: 15px;
     }
 }

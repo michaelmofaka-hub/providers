@@ -16,8 +16,9 @@ h1 {
 .hero {
     margin: 50px auto;
     display: flex;
-    width: 900px;
-    height: 500px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
     gap: 20px;
     border-radius: 20px;
 }
@@ -68,20 +69,39 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 968px) {
+/* Tablet breakpoint */
+@media screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
-        height: 90vh;
-        width: 100%;
-        padding: 29px;
+        gap: 15px;
+        padding: 15px;
     }
     .overlay_left {
-        height: 200px;
         width: 100%;
+        height: auto;
         border-radius: 18px;
     }
-    .overlay_right,
-    input {
+    .overlay_right {
         width: 100%;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    .hero {
+        margin: 30px auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .center {
+        gap: 15px;
+    }
+    #container input {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 }

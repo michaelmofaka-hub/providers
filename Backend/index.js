@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 
 import { connectDB } from "./Config/db.js";
 import Auth from "./Routes/Auth.js";
@@ -7,10 +8,16 @@ import Auth from "./Routes/Auth.js";
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.get("api/routes", Auth);
+dotenv.config();
+app.get("/health", (req, res) => {
+    res.status(201).json({ message: "ok" });
+    console.log("welcome world");
+});
+app.use("api/", Auth);
 
-port = 8000;
+const port = process.env.PORT;
 app.listen(port, () => {
     connectDB();
     console.log(`server running on port ${port}`);
+    console.log("health check in progress...");
 });

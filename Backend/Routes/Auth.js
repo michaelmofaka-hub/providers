@@ -4,6 +4,6 @@ import { signin } from "../Controller/Authcontroller.js";
 
 const router = express.Router();
 
-router.post("/api/signin", signin);
+router.post("/signin", signin);
 
 export default router;

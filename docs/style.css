@@ -14,7 +14,7 @@
 body {
     max-width: 100%;
     min-height: 100vh;
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
 }
 h1 {
     text-transform: capitalize;
@@ -31,8 +31,11 @@ h1 {
     background: #9999;
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .nav_group {
     display: flex;
@@ -40,12 +43,16 @@ h1 {
     gap: 10px;
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
+    align-items: center;
+    flex-wrap: wrap;
 }
 .nav_group a {
     text-decoration: none;
     color: #000;
     border-radius: 10px;
     z-index: 1000;
+    padding: 8px 15px;
+    white-space: nowrap;
 }
 .nav_overlay {
     position: fixed;
@@ -64,23 +71,40 @@ h1 {
 }
 .menu-toggle {
     display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
 }
 .btn_btn-auth {
     background: gold;
-    padding: 8px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .find_hub {
     display: flex;
     padding: 20px;
     width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .find_logo {
     color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 .overlay_left {
     width: 70%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    min-width: 0;
 }
 .hero-slide {
     display: flex;
@@ -92,17 +116,26 @@ h1 {
     padding: 14px;
     align-items: center;
     width: 100%;
+    display: flex;
+    gap: 10px;
 }
 .search_bar input,
-button {
-    padding: inherit;
+.search_bar button {
+    padding: 12px 14px;
     font-size: 16px;
     border-radius: 10px;
     outline: none;
-    border: none;
+    border: 1px solid #ddd;
+}
+.search_bar input {
+    flex: 1;
+    min-width: 200px;
 }
 .search {
     background: gold;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .search:hover {
     background: #555555;
@@ -112,23 +145,27 @@ button {
     background-attachment: cover;
     background-position: fixed;
     height: auto;
+    min-height: 300px;
     flex: 1;
 }
 .mini_card {
     border-radius: 10px;
     background: #e0e0e0;
-    padding: 8px;
+    padding: 8px 12px;
     text-transform: capitalize;
+    min-width: 120px;
+    flex: 1 1 auto;
 }
 .providersbay {
     display: flex;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .mini_card2 {
     border-radius: 10px;
     background: #e0e0e0;
-    padding: 8px;
+    padding: 8px 12px;
     width: 100%;
     text-transform: capitalize;
 }
@@ -142,15 +179,18 @@ button {
     border-top: 1px solid grey;
     margin-top: 30px;
     position: sticky;
-    top: 0%;
-    left: 0%;
+    bottom: 0;
+    left: 0;
+    gap: 10px;
 }
 .footer_link {
     align-items: center;
     color: var(--muted);
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
+/* Tablet breakpoint */
 @media screen and (max-width: 968px) {
     .overlay_right {
         display: none;
@@ -158,32 +198,76 @@ button {
     .overlay_left {
         width: 100%;
     }
-    .nav_group.active {
-        display: flex;
-        -webkit-backdrop-filter: blur(18px);
-        backdrop-filter: blur(18px);
-    }
-    .nav_group {
-        display: none;
-        top: 100%;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        background: #999999;
-        -webkit-backdrop-filter: blur(18px);
-        backdrop-filter: blur(18px);
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
+    .header {
+        position: relative;
     }
     .menu-toggle {
         display: block;
     }
+    .nav_group.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #999999;
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid grey;
+    }
+    .nav_group {
+        display: none;
+    }
+    .nav_overlay.active {
+        display: block;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 640px) {
+    body {
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+    .header {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .find_hub {
+        padding: 15px;
+        gap: 15px;
+    }
+    .find_logo {
+        font-size: 20px;
+    }
+    .overlay_left {
+        width: 100%;
+    }
+    .search_bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .search_bar input {
+        width: 100%;
+        min-width: auto;
+    }
+    .search {
+        width: 100%;
+    }
+    .hero-slide {
+        gap: 15px;
+    }
+    .mini_card {
+        flex: 1 1 calc(50% - 7.5px);
+    }
     .providersbay {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+    }
+    .menu-toggle {
+        font-size: 20px;
+        padding: 5px;
     }
 }

@@ -25,5 +25,4 @@ app.listen(port, () => {
     } catch (error) {
         console.log("500 error");
       }
-    }
 });

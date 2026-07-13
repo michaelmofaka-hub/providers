@@ -16,13 +16,13 @@ app.get("/health", (req, res) => {
 });
 app.use("/api/", Auth);
 
-const port = process.env.PORT|8000;
+const port = process.env.PORT | 8000;
 app.listen(port, () => {
-  try {
-    connectDB();
-    console.log(`server running on port ${port}`);
-    console.log("health check in progress...");
-  } catch (error) {
-    console.log("500 error");
-  }
+    try {
+        connectDB();
+        console.log(`server running on port ${port}`);
+        console.log("health check in progress...");
+    } catch (error) {
+        console.log("500 error");
+    }
 });

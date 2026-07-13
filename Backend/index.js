@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.get("/health", (req, res) => {
-    res.status(201).json({ message: "ok" });
+    res.status(200).json({ message: "ok" });
     console.log("welcome world");
 });
 app.use("/api/", Auth);
@@ -24,5 +24,6 @@ app.listen(port, () => {
         console.log("health check in progress...");
     } catch (error) {
         console.log("500 error");
+      }
     }
 });

@@ -71,8 +71,19 @@ h1 {
 .find_logo {
     color: gold;
 }
+.side_bar {
+    position: sticky;
+    align-item: center;
+    width: 90px;
+    padding: 18px;
+    top: 0;
+    left: 0;
+    height: auto;
+    display: grid;
+    gap: 20px;
+}
 .overlay_left {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -104,14 +115,12 @@ button {
 .overlay_right {
     background: url("./profile.jpg") no-repeat;
     background-attachment: cover;
-    background-position: contain;
-    background-size: cover;
-    width: auto;
-    height: auto;
+    background-position: center;
+    background-size: auto auto;
     flex: 1;
 }
 .home_slide {
-    max-width: 100%;
+    width: 100%;
     diaplay: flex;
 }
 .mini_card {
@@ -123,9 +132,9 @@ button {
     align-items: center;
     gap: 1.3rem auto;
     height: auto;
-    flex: 1;
+    flex-shrink: shrink;
     text-transform: capitalize;
-    width: auto auto;
+    width: auto;
 }
 .mini_card i {
     font-size: 28px;
@@ -141,6 +150,69 @@ button {
     padding: 8px;
     width: 100%;
     text-transform: capitalize;
+}
+.float {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.content {
+    display: flex;
+    gap: 30px;
+}
+.floater {
+    display: grid;
+}
+.ratings,
+.overlay {
+    display: flex;
+    gap: 12px;
+}
+.ratings i {
+    color: gold;
+}
+.see_profile {
+    background: gold;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    height: auto;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+.home_bar {
+    display: none;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px 0;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background: #ececec;
+}
+.bottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 300px;
+}
+.bottom a {
+    color: #000;
+}
+.bottom a:hover {
+    color: gold;
+    outline: #000;
 }
 .footer {
     display: flex;
@@ -159,26 +231,6 @@ button {
     align-items: center;
     color: var(--muted);
     text-transform: capitalize;
-}
-.home_bar {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    padding: 20px 0;
-    position: sticky;
-    left: 0;
-    bottom: 0;
-    background: #ececec;
-}
-.bottom {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex: 1 300px;
-}
-.bottom i:hover {
-    color: gold;
-    outline: #000;
 }
 
 @media screen and (max-width: 968px) {
@@ -213,5 +265,26 @@ button {
     .providersbay {
         flex-direction: column;
         gap: 20px;
+    }
+    .search_bar input,
+    button {
+        width: 100%;
+    }
+    .home_bar {
+        display: flex;
+    }
+    .side_bar {
+        display: none;
+    }
+    .side_bar .bottom {
+        display: none;
+    }
+    .card {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .see_profile {
+        width: 100%;
     }
 }

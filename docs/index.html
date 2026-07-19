@@ -10,7 +10,6 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
-      
     </head>
     <body>
         <header class="header">
@@ -18,10 +17,10 @@
 
             <div class="nav_group" id="nav_bar">
                 <a href="#">home</a>
-                <a href="./serach/services.html">services</a>
+                <a href="../Search/search.html">services</a>
                 <a href="#">how it works</a>
-                <a href="./Profile/Profile.html">become a provider</a>
-                <a href="./Auth/login.html" class="btn_btn-auth">log in</a>
+                <a href="../Profile/Profile.html">become a provider</a>
+                <a href="../Auth/login.html" class="btn_btn-auth">log in</a>
                 <a href="../Auth/signin.html" class="btn_btn-auth">sign in</a>
             </div>
             <div class="nav_overlay" id="nav_overlay"></div>
@@ -30,17 +29,43 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
         </header>
+        <aside class="side_bar">
+            <div class="bottom">
+                <a href="index.html">
+                    <i class="fa-solid fa-home"></i>
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="../Search/search.html">
+                    <i class="fa-solid fa-search"></i>
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="../Jobs/Myjob.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="../Messages/Messages.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="../Profile/Profile.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </aside>
         <main class="find_hub">
             <div class="overlay_left">
                 <h1>find trusted</h1>
                 <h1 class="find_logo">local services</h1>
                 <div class="search_bar">
-                    -
                     <input
                         list="counties"
                         id="county"
                         name="county"
-                        placeholder="Start typing..."
+                        placeholder="search for popular services..."
                     />
                     <datalist id="counties">
                         <option value="Baringo"></option>
@@ -127,52 +152,39 @@
                 </div>
             </div>
             <div class="overlay_right">
-                <article class="overview">
-                    <h2>500+</h2>
-                </article>
+                <article class="overview"></article>
             </div>
         </main>
         <section class="service_bay">
             <div class="float">
-                <h1 style=" font-weight: bold">popular services</h1>
-                <a class="view_all">view_all</a>
+                <h1 style="font-weight: bold">popular services</h1>
+                <a class="view_all" href="../Search/Search.html">view_all</a>
             </div>
-            <div class="providersbay">
-                <article class="mini_card2">
-                    <h3>plumbing</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
-                </article>
-                <article class="mini_card2">
-                  <div class="hero_image">
-                    <img src="profile.jpg" alt="">
-                  </div>
-                    <h3>electrician</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
-                </article>
-                <article class="mini_card2">
-                    <h3>housekeeper</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
-                </article>
-                <article class="mini_card2">
-                    <h3>painter</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
-                </article>
-                <article class="mini_card2">
-                    <h3>carpentry</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
-                </article>
-                <article class="mini_card2">
-                    <h3>driver</h3>
-                    <span id="providers">3k+</span>
-                    <p>providers</p>
+            <div class="cards">
+                <article class="card">
+                    <div class="content">
+                        <img src="profile.jpg" alt="" />
+                        <div class="floater">
+                            <h3 id="title">james plumbing services</h3>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i
+                                ><span id="reviews">4.9</span>
+                            </div>
+                            <div class="overlay">
+                                <span id="county">Nairobi</span>
+                                <p>kenya</p>
+                            </div>
+                            <div class="overlay">
+                                <p>from ksh</p>
+                                <span id="amount">300 +</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../Profile/Profile.html" class="see_profile"
+                        >see profile</a
+                    >
                 </article>
             </div>
-            <h3>more....</h3>
         </section>
         <footer class="footer">
             <div class="footer_link">&copy2026 all rights reserved</div>
@@ -180,33 +192,33 @@
         </footer>
         <div class="home_bar">
             <div class="bottom">
-              <a href="index.html">
-                <i class="fa-solid fa-home"></i>
-              </a>
+                <a href="index.html">
+                    <i class="fa-solid fa-home"></i>
+                </a>
                 <p>home</p>
             </div>
             <div class="bottom">
-              <a href="../Search/search.html">
-                <i class="fa-solid fa-search"></i>
-              </a>
-                <p>home</p>
+                <a href="../Search/search.html">
+                    <i class="fa-solid fa-search"></i>
+                </a>
+                <p>Search</p>
             </div>
             <div class="bottom">
-              <a href="../Jobs/Myjob.html">
-                <i class="fa-solid fa-briefcase"></i>
-              </a>
-                <p>home</p>
+                <a href="../Jobs/Myjob.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+                <p>Jobs</p>
             </div>
             <div class="bottom">
-              <a h"ref="index.html">
-                <i class="fa-solid fa-home"></i>
-              </a>
-                <p>home</p>
+                <a href="../Messages/Messages.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                </a>
+                <p>messages</p>
             </div>
             <div class="bottom">
-              <a href="../Profile/Profile.html">
-                <i class="fa-solid fa-user"></i>
-              </a>
+                <a href="../Profile/Profile.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
                 <p>profile</p>
             </div>
         </div>

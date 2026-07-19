@@ -12,6 +12,57 @@
         />
     </head>
     <body>
+        <header class="header">
+          <h1>fixora</h1>
+          <i class="fa-solid fa-filter"></i>
+          <div class="search">
+            <input type="search" placeholder="search for services...">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <input list="counties" placeholder="search for services in your county">
+            <datalist id="counties">
+              <option value="nairobi"></option>
+            </datalist>
+          </div>
+        </header>
+      <main class="hero">
+        <aside class="sidebar">
+          <nav class="navbar">
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">all cartegories</a>
+            <a href="#">others</a>
+          </nav>
+        </aside>
+        <div class="container">
+         <div class="topbar">
+           <h2 id="search_title">plumbing</h2>
+           <button id="filter">
+             <i class="fa-solid fa-filter"></i>
+           </button>
+         </div>
+          <div class="box">
+            <article class="card">
+              <div class="content">
+                <img src="profile.jpg" alt="">
+                <div class="float">
+                  <h3 id="title">james plumbing services</h3>
+                  <div class="ratings"><i class="fa-solid fa-star"></i><span id="reviews">4.9</span></div>
+                  <div class="overlay"><span id="county">Nairobi</span><p>kenya</p></div>
+                  <div class="overlay"><p>from ksh</p><span id="amount">300 +</span></div>
+                </div>
+              </div>  
+              <a href="../Profile/Profile.html">see profile</a>
+            </article>
+          </div>
+    
+      </main>
         <div class="home_bar">
             <div class="bottom">
                 <a href="../index.html">
@@ -20,7 +71,7 @@
                 <p>home</p>
             </div>
             <div class="bottom">
-                <a href="../Search/search.html">
+                <a href="./Search/search.html">
                     <i class="fa-solid fa-search"></i>
                 </a>
                 <p>search</p>
@@ -32,7 +83,7 @@
                 <p>jobs</p>
             </div>
             <div class="bottom">
-                <a href="../Messages/Messages.html">
+                <a href="./Messages/Messages.html">
                     <i class="fa-solid fa-message"></i>
                 </a>
                 <p>Messages</p>

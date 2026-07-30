@@ -1,0 +1,558 @@
+{
+  "java": [
+    {
+      "caption": "psvm",
+      "snippet": "public static void main(String[] args) {\n    ${1:/* code */}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "sout",
+      "snippet": "System.out.println(${1:\"msg\"});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "souf",
+      "snippet": "System.out.printf(\"${1:%s}\", ${2:var});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "soutv",
+      "snippet": "System.out.println(\"${1:var} = \" + ${1:var});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "for",
+      "snippet": "for (int ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}++) {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "foreach",
+      "snippet": "for (${1:Type} ${2:item} : ${3:collection}) {\n    ${4}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "if",
+      "snippet": "if (${1:condition}) {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "ifelse",
+      "snippet": "if (${1:condition}) {\n    ${2}\n} else {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "while",
+      "snippet": "while (${1:condition}) {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "switch",
+      "snippet": "switch (${1:key}) {\n    case ${2:value}:\n        ${3}\n        break;\n    default:\n        break;\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "class",
+      "snippet": "public class ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "interface",
+      "snippet": "public interface ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "enum",
+      "snippet": "public enum ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "method",
+      "snippet": "public ${1:void} ${2:methodName}(${3:args}) {\n    ${4}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "prmethod",
+      "snippet": "private ${1:void} ${2:methodName}(${3:args}) {\n    ${4}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "ctor",
+      "snippet": "public ${1:ClassName}(${2:args}) {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "try",
+      "snippet": "try {\n    ${1}\n} catch (${2:Exception} e) {\n    e.printStackTrace();\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "tryf",
+      "snippet": "try {\n    ${1}\n} catch (${2:Exception} e) {\n    e.printStackTrace();\n} finally {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "throw",
+      "snippet": "throw new ${1:RuntimeException}(\"${2:message}\");",
+      "meta": "snippet"
+    },
+    {
+      "caption": "psf",
+      "snippet": "public static finalString ${1:VAR_NAME} = \"${2:value}\";",
+      "meta": "snippet"
+    },
+    {
+      "caption": "psi",
+      "snippet": "public static int ${1:VAR_NAME} = ${2:0};",
+      "meta": "snippet"
+    },
+    {
+      "caption": "list",
+      "snippet": "List<${1:String}> ${2:list} = new ArrayList<>();",
+      "meta": "snippet"
+    },
+    {
+      "caption": "map",
+      "snippet": "Map<${1:String}, ${2:String}> ${3:map} = new HashMap<>();",
+      "meta": "snippet"
+    },
+    {
+      "caption": "set",
+      "snippet": "Set<${1:String}> ${2:set} = new HashSet<>();",
+      "meta": "snippet"
+    },
+    {
+      "caption": "toast",
+      "snippet": "Toast.makeText(${1:getApplicationContext()}, \"${2:text}\", Toast.LENGTH_SHORT).show();",
+      "meta": "snippet"
+    },
+    {
+      "caption": "logd",
+      "snippet": "Log.d(\"${1:TAG}\", \"${2:message}\");",
+      "meta": "snippet"
+    },
+    {
+      "caption": "loge",
+      "snippet": "Log.e(\"${1:TAG}\", \"${2:message}\", ${3:exception});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "findview",
+      "snippet": "${1:TextView} ${2:view} = findViewById(R.id.${3:id});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "onclick",
+      "snippet": "${1:view}.setOnClickListener(new View.OnClickListener() {\n    @Override\n    public void onClick(View v) {\n        ${2}\n    }\n});",
+      "meta": "snippet"
+    },
+    {
+      "caption": "intent",
+      "snippet": "Intent intent = new Intent(${1:this}, ${2:TargetActivity}.class);\nstartActivity(intent);",
+      "meta": "snippet"
+    }
+  ],
+  "kotlin": [
+    {
+      "caption": "main",
+      "snippet": "fun main() {\n    ${1}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "maina",
+      "snippet": "fun main(args: Array<String>) {\n    ${1}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "pr",
+      "snippet": "println(\"${1:text}\")",
+      "meta": "snippet"
+    },
+    {
+      "caption": "prv",
+      "snippet": "println(\"${1:var} = $${1:var}\")",
+      "meta": "snippet"
+    },
+    {
+      "caption": "val",
+      "snippet": "val ${1:name} = ${2:value}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "var",
+      "snippet": "var ${1:name} = ${2:value}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "lateinit",
+      "snippet": "lateinit var ${1:name}: ${2:Type}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "lazy",
+      "snippet": "val ${1:name}: ${2:Type} by lazy {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "const",
+      "snippet": "const val ${1:NAME} = ${2:value}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "fun",
+      "snippet": "fun ${1:name}(${2:params}): ${3:ReturnType} {\n    ${4}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "pfun",
+      "snippet": "private fun ${1:name}(${2:params}) {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "sfun",
+      "snippet": "fun ${1:name}(${2:params}) = ${3:expression}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "sus",
+      "snippet": "suspend fun ${1:name}(${2:params}) {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "class",
+      "snippet": "class ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "data",
+      "snippet": "data class ${1:Name}(val ${2:prop}: ${3:Type})",
+      "meta": "snippet"
+    },
+    {
+      "caption": "enum",
+      "snippet": "enum class ${1:Name} {\n    ${2:ENTRY}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "interface",
+      "snippet": "interface ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "obj",
+      "snippet": "object ${1:Name} {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "comp",
+      "snippet": "companion object {\n    ${1}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "init",
+      "snippet": "init {\n    ${1}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "if",
+      "snippet": "if (${1:condition}) {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "ife",
+      "snippet": "if (${1:condition}) {\n    ${2}\n} else {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "when",
+      "snippet": "when (${1:key}) {\n    ${2:value} -> ${3}\n    else -> ${4}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "for",
+      "snippet": "for (${1:item} in ${2:collection}) {\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "fori",
+      "snippet": "for (i in 0 until ${1:count}) {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "try",
+      "snippet": "try {\n    ${1}\n} catch (e: Exception) {\n    e.printStackTrace()\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "let",
+      "snippet": "${1:it}.let { ${2:it} ->\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "apply",
+      "snippet": "${1:it}.apply {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "run",
+      "snippet": "${1:it}.run {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "also",
+      "snippet": "${1:it}.also { ${2:it} ->\n    ${3}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "launch",
+      "snippet": "CoroutineScope(Dispatchers.Main).launch {\n    ${1}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "withcontext",
+      "snippet": "withContext(Dispatchers.${1:IO}) {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "list",
+      "snippet": "val ${1:list} = listOf(${2})",
+      "meta": "snippet"
+    },
+    {
+      "caption": "mlist",
+      "snippet": "val ${1:list} = mutableListOf(${2})",
+      "meta": "snippet"
+    },
+    {
+      "caption": "map",
+      "snippet": "val ${1:map} = mapOf(${2})",
+      "meta": "snippet"
+    },
+    {
+      "caption": "toast",
+      "snippet": "Toast.makeText(context, \"${1:text}\", Toast.LENGTH_SHORT).show()",
+      "meta": "snippet"
+    },
+    {
+      "caption": "toastl",
+      "snippet": "Toast.makeText(context, \"${1:text}\", Toast.LENGTH_LONG).show()",
+      "meta": "snippet"
+    },
+    {
+      "caption": "logd",
+      "snippet": "Log.d(\"${1:TAG}\", \"${2:msg}\")",
+      "meta": "snippet"
+    },
+    {
+      "caption": "loge",
+      "snippet": "Log.e(\"${1:TAG}\", \"${2:msg}\", ${3:exception})",
+      "meta": "snippet"
+    },
+    {
+      "caption": "snack",
+      "snippet": "Snackbar.make(${1:view}, \"${2:text}\", Snackbar.LENGTH_SHORT).show()",
+      "meta": "snippet"
+    },
+    {
+      "caption": "intent",
+      "snippet": "val intent = Intent(this, ${1:TargetActivity}::class.java)\nstartActivity(intent)",
+      "meta": "snippet"
+    },
+    {
+      "caption": "click",
+      "snippet": "${1:view}.setOnClickListener {\n    ${2}\n}",
+      "meta": "snippet"
+    },
+    {
+      "caption": "findview",
+      "snippet": "val ${1:view}: ${2:ViewType} = findViewById(R.id.${3:id})",
+      "meta": "snippet"
+    }
+  ],
+  "xml": [
+    {
+      "caption": "ConstraintLayout",
+      "snippet": "<androidx.constraintlayout.widget.ConstraintLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".${1:MainActivity}\">\n\n    ${2}\n\n</androidx.constraintlayout.widget.ConstraintLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "CoordinatorLayout (Material)",
+      "snippet": "<androidx.coordinatorlayout.widget.CoordinatorLayout\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n\n    <com.google.android.material.appbar.AppBarLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\">\n\n        <com.google.android.material.appbar.MaterialToolbar\n            android:id=\"@+id/toolbar\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"?attr/actionBarSize\"\n            app:title=\"${1:Title}\" />\n\n    </com.google.android.material.appbar.AppBarLayout>\n\n    ${2}\n\n</androidx.coordinatorlayout.widget.CoordinatorLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "LinearLayout (V)",
+      "snippet": "<LinearLayout\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:orientation=\"vertical\">\n    ${1}\n</LinearLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "LinearLayout (H)",
+      "snippet": "<LinearLayout\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"horizontal\">\n    ${1}\n</LinearLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "FrameLayout",
+      "snippet": "<FrameLayout\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n    ${1}\n</FrameLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "ScrollView",
+      "snippet": "<ScrollView\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:fillViewport=\"true\">\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"vertical\">\n        ${1}\n    </LinearLayout>\n</ScrollView>",
+      "meta": "layout"
+    },
+    {
+      "caption": "NestedScrollView",
+      "snippet": "<androidx.core.widget.NestedScrollView\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    app:layout_behavior=\"@string/appbar_scrolling_view_behavior\">\n    ${1}\n</androidx.core.widget.NestedScrollView>",
+      "meta": "layout"
+    },
+    {
+      "caption": "SwipeRefreshLayout",
+      "snippet": "<androidx.swiperefreshlayout.widget.SwipeRefreshLayout\n    android:id=\"@+id/swipeRefresh\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n    ${1}\n</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>",
+      "meta": "layout"
+    },
+    {
+      "caption": "MaterialCardView",
+      "snippet": "<com.google.android.material.card.MaterialCardView\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:layout_margin=\"8dp\"\n    app:cardCornerRadius=\"12dp\"\n    app:cardElevation=\"4dp\"\n    app:strokeColor=\"@color/${1:outline}\"\n    app:strokeWidth=\"1dp\">\n    ${2}\n</com.google.android.material.card.MaterialCardView>",
+      "meta": "widget"
+    },
+    {
+      "caption": "MaterialButton",
+      "snippet": "<com.google.android.material.button.MaterialButton\n    android:id=\"@+id/${1:btn}\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:text=\"${2:Button}\"\n    style=\"@style/Widget.MaterialComponents.Button\" />",
+      "meta": "widget"
+    },
+    {
+      "caption": "MaterialButton (Outlined)",
+      "snippet": "<com.google.android.material.button.MaterialButton\n    style=\"@style/Widget.MaterialComponents.Button.OutlinedButton\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:text=\"${1:Button}\" />",
+      "meta": "widget"
+    },
+    {
+      "caption": "TextInputLayout (Outlined)",
+      "snippet": "<com.google.android.material.textfield.TextInputLayout\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:hint=\"${1:Hint}\"\n    style=\"@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox\">\n\n    <com.google.android.material.textfield.TextInputEditText\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:inputType=\"${2:text}\" />\n\n</com.google.android.material.textfield.TextInputLayout>",
+      "meta": "widget"
+    },
+    {
+      "caption": "FloatingActionButton",
+      "snippet": "<com.google.android.material.floatingactionbutton.FloatingActionButton\n    android:id=\"@+id/fab\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:layout_gravity=\"bottom|end\"\n    android:layout_margin=\"16dp\"\n    app:srcCompat=\"@drawable/${1:ic_add}\"\n    contentDescription=\"@string/${2:desc}\" />",
+      "meta": "widget"
+    },
+    {
+      "caption": "RecyclerView",
+      "snippet": "<androidx.recyclerview.widget.RecyclerView\n    android:id=\"@+id/${1:recyclerView}\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    app:layoutManager=\"androidx.recyclerview.widget.LinearLayoutManager\"\n    tools:listitem=\"@layout/${2:item_layout}\" />",
+      "meta": "list"
+    },
+    {
+      "caption": "ViewPager2",
+      "snippet": "<androidx.viewpager2.widget.ViewPager2\n    android:id=\"@+id/viewPager\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\" />",
+      "meta": "list"
+    },
+    {
+      "caption": "Guideline (Vertical)",
+      "snippet": "<androidx.constraintlayout.widget.Guideline\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\"\n    app:layout_constraintGuide_percent=\"${1:0.5}\" />",
+      "meta": "helper"
+    },
+    {
+      "caption": "Guideline (Horizontal)",
+      "snippet": "<androidx.constraintlayout.widget.Guideline\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"horizontal\"\n    app:layout_constraintGuide_begin=\"${1:16dp}\" />",
+      "meta": "helper"
+    },
+    {
+      "caption": "Barrier",
+      "snippet": "<androidx.constraintlayout.widget.Barrier\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    app:barrierDirection=\"${1:end}\"\n    app:constraint_referenced_ids=\"${2:id1,id2}\" />",
+      "meta": "helper"
+    },
+    {
+      "caption": "BottomNavigationView",
+      "snippet": "<com.google.android.material.bottomnavigation.BottomNavigationView\n    android:id=\"@+id/bottom_navigation\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:layout_gravity=\"bottom\"\n    app:menu=\"@menu/${1:bottom_menu}\" />",
+      "meta": "nav"
+    },
+    {
+      "caption": "NavHostFragment",
+      "snippet": "<androidx.fragment.app.FragmentContainerView\n    android:id=\"@+id/nav_host_fragment\"\n    android:name=\"androidx.navigation.fragment.NavHostFragment\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    app:defaultNavHost=\"true\"\n    app:navGraph=\"@navigation/${1:nav_graph}\" />",
+      "meta": "nav"
+    },
+    {
+      "caption": "Menu Item",
+      "snippet": "<item\n    android:id=\"@+id/${1:action_name}\"\n    android:icon=\"@drawable/${2:ic_icon}\"\n    android:title=\"${3:Title}\"\n    app:showAsAction=\"ifRoom\" />",
+      "meta": "menu"
+    },
+    {
+      "caption": "Color Definition",
+      "snippet": "<color name=\"${1:color_name}\">#${2:FFFFFF}</color>",
+      "meta": "res"
+    },
+    {
+      "caption": "String Definition",
+      "snippet": "<string name=\"${1:string_name}\">${2:Text}</string>",
+      "meta": "res"
+    },
+    {
+      "caption": "Dimension (dp/sp)",
+      "snippet": "<dimen name=\"${1:dimen_name}\">${2:16dp}</dimen>",
+      "meta": "res"
+    },
+    {
+      "caption": "Style (Basic)",
+      "snippet": "<style name=\"${1:StyleName}\" parent=\"${2:Theme.MaterialComponents.Light}\">\n    <item name=\"${3:android:textColor}\">@color/${4:black}</item>\n</style>",
+      "meta": "res"
+    },
+    {
+      "caption": "Shape (Rectangle)",
+      "snippet": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:shape=\"rectangle\">\n    <solid android:color=\"@color/${1:white}\" />\n    <corners android:radius=\"${2:8dp}\" />\n    <stroke android:width=\"1dp\" android:color=\"@color/${3:gray}\" />\n</shape>",
+      "meta": "drawable"
+    },
+    {
+      "caption": "Selector (Button State)",
+      "snippet": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<selector xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <item android:state_pressed=\"true\" android:drawable=\"@drawable/${1:pressed_bg}\" />\n    <item android:drawable=\"@drawable/${2:default_bg}\" />\n</selector>",
+      "meta": "drawable"
+    },
+    {
+      "caption": "Vector Asset (Empty)",
+      "snippet": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"24dp\"\n    android:height=\"24dp\"\n    android:viewportWidth=\"24\"\n    android:viewportHeight=\"24\">\n    <path\n        android:fillColor=\"#FF000000\"\n        android:pathData=\"${1}\" />\n</vector>",
+      "meta": "drawable"
+    },
+    {
+      "caption": "Permission",
+      "snippet": "<uses-permission android:name=\"android.permission.${1:INTERNET}\" />",
+      "meta": "manifest"
+    },
+    {
+      "caption": "Hardware Accelerated",
+      "snippet": "android:hardwareAccelerated=\"true\"",
+      "meta": "attribute"
+    },
+    {
+      "caption": "Input Type (Password)",
+      "snippet": "android:inputType=\"textPassword\"",
+      "meta": "attribute"
+    },
+    {
+      "caption": "Scale Type (CenterCrop)",
+      "snippet": "android:scaleType=\"centerCrop\"",
+      "meta": "attribute"
+    },
+    {
+      "caption": "Clip To Padding",
+      "snippet": "android:clipToPadding=\"false\"",
+      "meta": "attribute"
+    },
+    {
+      "caption": "Constraint: Top-Top",
+      "snippet": "app:layout_constraintTop_toTopOf=\"parent\"",
+      "meta": "constraint"
+    },
+    {
+      "caption": "Constraint: Bottom-Bottom",
+      "snippet": "app:layout_constraintBottom_toBottomOf=\"parent\"",
+      "meta": "constraint"
+    },
+    {
+      "caption": "Constraint: Start-Start",
+      "snippet": "app:layout_constraintStart_toStartOf=\"parent\"",
+      "meta": "constraint"
+    },
+    {
+      "caption": "Constraint: End-End",
+      "snippet": "app:layout_constraintEnd_toEndOf=\"parent\"",
+      "meta": "constraint"
+    }
+  ]
+}

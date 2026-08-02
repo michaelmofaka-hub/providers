@@ -4,5 +4,4 @@ const nav_overlay = document.getElementById("nav_overlay");
 
 menu.addEventListener("click", () => {
     nav_bar.classList.toggle("active");
-    nav_overlay.classList.toggle("active");
 });

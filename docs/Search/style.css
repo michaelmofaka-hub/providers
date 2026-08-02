@@ -21,12 +21,10 @@ h1 {
 }
 .header {
     display: flex;
-    padding: 20px;
+    padding: 18px;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     border-bottom: 1px solid grey;
-    margin-bottom: 30px;
     position: sticky;
     background: #ececec;
     -webkit-backdrop-filter: blur(18px);
@@ -34,131 +32,119 @@ h1 {
     top: 0%;
     left: 0%;
 }
-.nav_group {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.2rem;
+.search_components{
+  display: flex;
+  flex: 1;
+  gap: 1.2rem;
 }
-.nav_group a {
-    text-decoration: none;
-    color: #000;
-    border-radius: 10px;
-    z-index: 1000;
+.search,
+.location{
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 18px;
 }
-.nav_overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
-    z-index: 998;
+.search input,
+.location input{
+  padding: 5px;
+  outline: none;
+  border: none;
+  width: 90%;
 }
-.nav_overlay.active {
-    display: block;
+.search i,
+.location i{
+  flex: 1;
 }
-.menu-toggle {
-    display: none;
+.hero{
+  display: flex;
+  width: 100%;
+  padding: 12px;
 }
-.btn_btn-auth {
-    background: gold;
-    padding: 8px;
+.sidebar{
+  width: 300px;
+  align-items: center;
+  height: 100vh;
 }
-.find_hub {
-    display: flex;
-    padding: 20px;
-    height: auto;
-    width: 100%;
+.navbar{
+  width: 100%;
+  display: grid;
+  gap: 1.2rem;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
 }
-.find_logo {
-    color: gold;
+.navbar a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  padding: 10px;
+  border-radius: 20px;
 }
-.overlay_left {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+.navbar a:hover{
+  background: gold;
 }
-.hero-slide {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 24px;
+.menu-toggle{
+  display: none;
+  padding: 8px;
+  margin: 20px 8px;
 }
-.search_bar {
-    padding: 14px;
-    align-items: center;
-    width: 100%;
+.hero_main{
+  flex: 1;
+  width: 100%;
 }
-.search_bar input,
-button {
-    padding: inherit;
-    font-size: 16px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
+
+.topbar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: crnter;
+  padding: 8px;
+  margin: 10px 0;
 }
-.search {
-    background: gold;
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  padding: 8px;
 }
-.search:hover {
-    background: #555555;
+.content{
+  display: flex;
+  gap: .9rem;
 }
-.overlay_right {
-    background: url("./profile.jpg") no-repeat;
-    background-attachment: cover;
-    background-position: contain;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    flex: 1;
+.content img{
+  width: auto;
+  height: 100%;
 }
-.home_slide {
-    max-width: 100%;
-    diaplay: flex;
+.float{
+  display: grid;
+  gap: 8px;
 }
-.mini_card {
-    border-radius: 10px;
-    background: #e0e0e0;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.3rem auto;
-    height: auto;
-    flex: 1;
-    text-transform: capitalize;
-    width: auto auto;
+.ratings,
+.overlay{
+  display: flex;
+  gap: 5px;
 }
-.mini_card i {
-    font-size: 28px;
+.jobs{
+  display: grid;
+  gap: 2.3rem;
+  height: 100%;
 }
-.providersbay {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-}
-.mini_card2 {
-    border-radius: 10px;
-    background: #e0e0e0;
-    padding: 8px;
-    width: 100%;
-    text-transform: capitalize;
-}
-.footer {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border-top: 1px solid grey;
-    margin-top: 30px;
-    position: sticky;
-    top: 0%;
-    left: 0%;
-}
-.footer_link {
-    align-items: center;
-    color: var(--muted);
-    text-transform: capitalize;
+.jobs a{
+  background: gold;
+  border-radius: 10px;
+  padding: 8px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
 }
 .home_bar {
     display: flex;
@@ -167,7 +153,7 @@ button {
     padding: 20px 0;
     position: sticky;
     left: 0;
-    bottom: 0;
+  top: 100%;
     background: #ececec;
 }
 .bottom {
@@ -176,42 +162,56 @@ button {
     flex-direction: column;
     flex: 1 300px;
 }
-.bottom i:hover {
+.bottom a {
+    color: #000;
+}
+.bottom a:hover {
     color: gold;
     outline: #000;
 }
 
-@media screen and (max-width: 968px) {
-    .overlay_right {
-        display: none;
-    }
-    .overlay_left {
-        width: 100%;
-    }
-    .nav_group.active {
-        display: flex;
-    }
-    .nav_group {
-        display: none;
-        top: 100%;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        z-index: 1000;
-        position: absolute;
-        left: 0;
-        background: #ececec;
-        -webkit-backdrop-filter: blur(18px);
-        backdrop-filter: blur(18px);
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    .providersbay {
-        flex-direction: column;
-        gap: 20px;
-    }
+@media screen and (max-width: 968px){
+  .header{
+    flex-direction: column;
+  }
+  .search_components{
+    flex-direction: column;
+    width: 100%;
+  }
+  .sidebar{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #Fff;
+  }
+.sidebar.active{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100vh;
+    z-index:1000;
+    flex-direction:column;
+    background:#ececec;
+}
+  .menu-toggle{
+    display: block;
+    justify-self: right;
+  }
+  .card{
+    width: 100%;
+    flex-direction: column;
+  }
+  .jobs{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.3rem;
+    margin: 12px 0;
+    width: 100%;
+  }
+  .jobs a{
+    width: 50%;
+  }
 }

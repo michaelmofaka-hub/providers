@@ -36,7 +36,7 @@ body {
     height: 100px;
     border-radius: 50%;
     position: absolute;
-  left: 8%;
+    left: 8%;
     top: 350px;
 }
 .notification_bar img {
@@ -59,7 +59,7 @@ body {
 }
 .overlay .left {
     display: grid;
-  gap: 14px;
+    gap: 14px;
 }
 .a_section,
 .b_section {
@@ -67,8 +67,8 @@ body {
     justify-content: space-between;
     gap: 20px;
 }
-.overflow{
-  display: flex;
+.overflow {
+    display: flex;
 }
 .b_section button {
     padding: 10px;
@@ -78,14 +78,14 @@ body {
 .right {
     display: inline-flex;
     gap: 30px;
-  width: auto-flow;
+    width: auto-flow;
 }
 .ctn_btn {
     border: 1px solid gold;
     padding: 10px;
     border-radius: 10px;
     width: auto;
-  flex: 1;
+    flex: 1;
 }
 .ctn_btn:hover {
     background: gold;
@@ -96,17 +96,17 @@ body {
     border-radius: 10px;
     border: none;
     width: auto;
-  text-decoration: none;
-  text-transform: capitalize;
-  flex: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+    flex: 1;
 }
 .ctn_btn2:hover {
     background: transparent;
     border: 2px solid gold;
 }
-.hero{
-  display: flex;
-  width: 100%;
+.hero {
+    display: flex;
+    width: 100%;
 }
 .middle_nav {
     margin-top: 30px;
@@ -158,11 +158,11 @@ body {
     .left {
         width: 100%;
     }
-  .middle_nav{
-    display: none;
-  }
-  .hero{
-    flex-direction: column;
-    gap: 30px;
-  }
+    .middle_nav {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
 }

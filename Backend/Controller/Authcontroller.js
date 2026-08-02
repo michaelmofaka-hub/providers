@@ -47,12 +47,36 @@ export const signin = async (req, res) => {
                 email: user.email
             }
         });
-    } catch (error) {
-        console.error(error);
-
-        res.status(500).json({
-            success: false,
-            message: "Server error"
-        });
     }
-};
+    catch(error){
+      return res.status(500).json({
+        success: false ,
+        message: "server error"
+      });
+    }
+}
+  
+export const login = (req, res) => {
+    try{
+        const {username, password} = req.body;
+        if (!username | !password){
+            return res.status(201).json({
+              success: false,
+              message: "please input all the details"
+          });
+        }
+        const checkUser = await User.findOne();
+        if (checkUser) {
+            return res.status(400).json({
+              success: true,
+              message: "loged in successfully"
+          });
+        }
+      }
+    catch(error){
+      return res.status(500).json({
+        success: false ,
+        message: "server error"
+      });
+    }
+}

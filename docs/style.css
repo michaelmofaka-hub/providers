@@ -22,7 +22,7 @@ h1 {
 .header {
     display: flex;
     padding: 20px;
- display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -46,16 +46,6 @@ h1 {
     border-radius: 10px;
     z-index: 1000;
 }
-.nav_overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
-    z-index: 998;
-}
-.nav_overlay.active {
-    display: block;
-}
 .menu-toggle {
     display: none;
 }
@@ -74,12 +64,12 @@ h1 {
 }
 .side_bar {
     position: sticky;
-    align-item: center;
+    align-items: center;
     width: 90px;
     padding: 18px;
     top: 0;
     left: 0;
-    height: auto;
+    height: 90vh auto;
     display: grid;
     gap: 20px;
 }
@@ -122,7 +112,7 @@ button {
 }
 .home_slide {
     width: 100%;
-    diaplay: flex;
+    display: flex;
 }
 .mini_card {
     border-radius: 10px;
@@ -136,6 +126,12 @@ button {
     flex-shrink: shrink;
     text-transform: capitalize;
     width: auto;
+    transition:.25s;
+    cursor:pointer;
+}
+
+.mini_card:hover{
+    transform:translateY(-5px);
 }
 .mini_card i {
     font-size: 28px;
@@ -145,24 +141,18 @@ button {
     width: 100%;
     gap: 20px;
 }
-.mini_card2 {
-    border-radius: 10px;
-    background: #e0e0e0;
-    padding: 8px;
-    width: 100%;
-    text-transform: capitalize;
-}
 .float {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-.card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.card{
+    background:white;
+    border-radius:16px;
+    padding:16px;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+  display: flex;
 }
 .content {
     display: flex;
@@ -186,20 +176,30 @@ button {
     border: none;
     border-radius: 10px;
     align-items: center;
-    height: auto;
+    justify-content: center;
+    height: 40px;
     color: #000;
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
 }
+.see_profile,
+.search{
+    transition:.25s;
+}
+
+.see_profile:hover,
+.search:hover{
+    transform:scale(1.03);
+}
 .home_bar {
-    display: none;
+    display: flex;
     justify-content: space-between;
     max-width: 100%;
     padding: 20px 0;
     position: sticky;
     left: 0;
-    bottom: 0;
+  top: 100%;
     background: #ececec;
 }
 .bottom {
@@ -215,6 +215,7 @@ button {
     color: gold;
     outline: #000;
 }
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -235,6 +236,13 @@ button {
 }
 
 @media screen and (max-width: 968px) {
+    .header{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .menu-toggle{
+      width: 50px;
+    }
     .overlay_right {
         display: none;
     }
@@ -274,11 +282,8 @@ button {
     .home_bar {
         display: flex;
     }
-    .side_bar {
-        display: none;
-    }
-    .side_bar .bottom {
-        display: none;
+    .side_bar{
+      display: none;
     }
     .card {
         flex-direction: column;

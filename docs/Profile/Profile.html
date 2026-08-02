@@ -5,18 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>fixora | profile page</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
     </head>
     <body>
         <header class="topnav">
             <h1>fixora</h1>
-            <div class="serch_bar">
-                <input
-                    type="search"
-                    id="search"
-                    placeholder="what services do tou need?.."
-                />
-                <button id="send">search</button>
-            </div>
             <div class="notification_bar">
                 <span id="notification_available">3</span>
                 <img src="profile.jpg" alt="" />
@@ -33,22 +29,30 @@
         <section class="overlay">
             <div class="left">
                 <div class="a_section">
-                    <i class=""></i>
-                    <p>rates</p>
+                    <div class="overflow">
+                        <i class="fa-solid fa-star"></i>
+                        <p>rates</p>
+                    </div>
                     <span id="yearsexperience">5years of experience</span>
-                    <span id="content_jobs">250</span>
-                    <p>completed jobs</p>
+                    <div class="overflow">
+                        <span id="content_jobs">250</span>
+                        <p>completed jobs</p>
+                    </div>
                 </div>
                 <div class="b_section">
-                    <p id="location">nairobi</p>
-                    <p>kenya</p>
-                    <p>responds in</p>
-                    <span id="minutes">30 minutes</span>
+                    <div class="overflow">
+                        <p id="location">nairobi</p>
+                        <p>kenya</p>
+                    </div>
+                    <div class="overflow">
+                        <p>responds in</p>
+                        <span id="minutes">30 minutes</span>
+                    </div>
                 </div>
             </div>
             <div class="right">
                 <button class="ctn_btn">message</button>
-                <a href="../../index.html" class="ctn_btn2" id="request"
+                <a href="../Jobs/Myjob.html" class="ctn_btn2"
                     >request a service</a
                 >
             </div>
@@ -60,9 +64,23 @@
         </nav>
         <main class="hero">
             <div class="overview" id="overview">
-                <div class="about"></div>
-                <div class="services"></div>
-                <div class="location"></div>
+                <div class="about">
+                    <h2>about</h2>
+                    <p>
+                        we offer proffesional plumbing services for both
+                        retailance and commercial households, our services are
+                        reliable and affordable
+                    </p>
+                </div>
+                <div class="services">
+                    <h2>services</h2>
+                    <div class="card">pipeinstallation</div>
+                    <div class="card">leak repair</div>
+                    <div class="card">drain cleaning</div>
+                </div>
+                <div class="location">
+                    <h2>location</h2>
+                </div>
             </div>
         </main>
         <footer class="footer">

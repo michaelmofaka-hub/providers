@@ -196,7 +196,8 @@ body {
     }
     .sidebar {
         display: none;
-        position: absolute;
+      flex-direction: column;
+        position: fixed;
         height: 90vh;
         top: 10%;
         left: 0;
@@ -205,11 +206,9 @@ body {
     #menu_toggle {
         display: block;
         position: absolute;
+      justify-self: right; 
         border-radius: 10px;
         padding: 8px;
-        height: fill-box;
-        left: 50px;
-        justify-self: unset;
     }
     .sidebar.active {
         display: flex;

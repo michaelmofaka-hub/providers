@@ -2,10 +2,10 @@ import User from "../Model/User.js";
 
 export const signin = async (req, res) => {
     try {
-        const { firstName, lastName, username, email, password } = req.body;
+        const { firstName, lastName, Username, email, password } = req.body;
 
         // Check required fields
-        if (!firstName || !lastName || !username || !email || !password) {
+        if (!firstName || !lastName || !Username || !email || !password) {
             return res.status(400).json({
                 success: false,
                 message: "All fields are required"
@@ -14,7 +14,7 @@ export const signin = async (req, res) => {
 
         // Check if user exists
         const existingUser = await User.findOne({
-            $or: [{ email }, { username }]
+            $or: [{ email }, { Username }]
         });
 
         if (existingUser) {
@@ -31,7 +31,7 @@ export const signin = async (req, res) => {
         const user = await User.create({
             firstName,
             lastName,
-            username,
+            Username,
             email,
             password: password
         });
@@ -40,23 +40,24 @@ export const signin = async (req, res) => {
             success: true,
             message: "Account created successfully",
             user: {
-                id: user._id,
-                firstName: user.firstName,
-                lastName: user.lastName,
-                username: user.username,
-                email: user.email
+                id: User._id,
+                firstName: User.firstName,
+                lastName: User.lastName,
+                username: User.Username,
+                email: User.email
             }
         });
     }
     catch(error){
+      console.error(error);
       return res.status(500).json({
         success: false ,
-        message: "server error"
+        message: error.message
       });
     }
 }
   
-export const login = (req, res) => {
+export const login = async (req, res) => {
     try{
         const {username, password} = req.body;
         if (!username | !password){
@@ -65,7 +66,7 @@ export const login = (req, res) => {
               message: "please input all the details"
           });
         }
-        const checkUser = await User.findOne();
+        const checkUser =  User.findOne();
         if (checkUser) {
             return res.status(400).json({
               success: true,

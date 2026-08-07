@@ -1,11 +1,11 @@
 const CACHE_NAME = "providers-v1";
 
 const FILES = [
-    "/",
-    "/index.html",
-    "/style.css",
-    "/index.js",
-    "/manifest.json"
+    './',
+    './index.html',
+    './style.css',
+    './index.js',
+    './manifest.json'
 ];
 
 self.addEventListener("install", event => {

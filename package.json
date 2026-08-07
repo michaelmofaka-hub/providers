@@ -1,0 +1,24 @@
+{
+    "name": "providers",
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "dev": "node --watch index.js"
+    },
+    "keywords": [],
+    "type": "module",
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "cors": "^2.8.6",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "joi": "^18.2.3",
+        "mongoose": "^9.7.3",
+        "openai": "^6.45.0"
+    }
+}
